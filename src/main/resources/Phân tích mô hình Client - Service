@@ -1,0 +1,13 @@
+Client: Trình duyệt sẽ gửi Request như thế nào? (URL dự kiến, HTTP Method là GET hay POST?).
+Trình duyệt sẽ gửi Request với method GET
+URL có thể do bên dev định nghĩa vd: /products
+
+
+Server: Ứng dụng Spring Boot sẽ làm gì khi nhận yêu cầu? (Xử lý logic, gọi dữ liệu ở đâu?).
+Spring Boot nhận request thông qua Click của Client qua tầng Controller (Tầng nhận và trả thông tin giữa Backend và Fontend)
+Sau đó Service sẽ nhận yêu cầu và gọi đến Repository để connect với Databsase
+Database: Đóng vai trò gì trong yêu cầu này? (Tạm thời giả lập bằng bộ nhớ RAM).
+Database đóng vai trò lưu trữ Dữ liệu. Giả lập bằng ram thì nó sẽ lưu trực tiếp vào trong RAM có thể là List<Product>
+Response: Server trả về định dạng gì cho Client? (HTML hay JSON?).
+Server sẽ trả về định dạng JSON cho Client - Do đó Client sẽ phải tự định nghĩa JSON để xây dựng HTML cho JSON đó
+Có thể là dạng bảng tương ứng với các cột
